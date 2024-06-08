@@ -1,27 +1,24 @@
 import {
-  Box,
-  Flex,
-  Text,
-  IconButton,
-  Button,
-  Stack,
-  Collapse,
-  Icon,
-  Link,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  useColorModeValue,
-  useBreakpointValue,
-  useDisclosure,
-  Avatar,
-} from '@chakra-ui/react';
-import {
-  HamburgerIcon,
-  CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
+  CloseIcon,
+  HamburgerIcon,
 } from '@chakra-ui/icons';
+import {
+  Box,
+  Collapse,
+  Flex,
+  Icon,
+  IconButton,
+  Link,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  Stack,
+  Text,
+  useColorModeValue,
+  useDisclosure,
+} from '@chakra-ui/react';
 import AvatarWithRipple from './AvatarWithRipple';
 
 interface NavItem {
@@ -74,10 +71,7 @@ export default function Navbar({ navItems }: NavbarProps) {
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav navItems={navItems} />
           </Flex>
-          <AvatarWithRipple
-            imageSrc="./../../public/img/logo192.png"
-            size={'2rem'}
-          />
+          <AvatarWithRipple size={'2rem'} imageSrc={''} />
         </Flex>
 
         <Stack
