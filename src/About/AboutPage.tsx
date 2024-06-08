@@ -1,9 +1,3 @@
-import { Content } from 'antd/es/layout/layout';
-
 export const AboutPage = () => {
-  return (
-    <Content>
-      <div>AboutPage in progress</div>
-    </Content>
-  );
+  return <div>About Page in progress</div>;
 };

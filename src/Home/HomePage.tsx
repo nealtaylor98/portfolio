@@ -1,3 +1,3 @@
 export const HomePage = () => {
-  return <>Home Page in progress</>;
+  return <>Home Page is in Progress</>;
 };
