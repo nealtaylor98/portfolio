@@ -28,7 +28,11 @@ export const Portfolio = () => {
         ]}
       />
       <CustomBackground>
-        <PageContainer>Test</PageContainer>
+        <PageContainer>
+          {selectedNavItem === 'Home' && <HomePage />}
+          {selectedNavItem === 'About' && <AboutPage />}
+          {selectedNavItem === 'Projects' && <ProjectsPage />}
+        </PageContainer>
       </CustomBackground>
     </>
   );

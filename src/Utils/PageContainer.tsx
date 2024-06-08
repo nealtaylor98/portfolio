@@ -8,7 +8,7 @@ type PageContainerProps = {
 const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
   return (
     <Box
-      maxW="1400px"
+      maxW="1600px"
       mx="auto"
       px={4}
       bg={'white'}
