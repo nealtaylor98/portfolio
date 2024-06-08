@@ -8,7 +8,11 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react';
 
+import { useNavigate } from 'react-router-dom';
+
 export const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <Stack minH={'80vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -46,6 +50,9 @@ export const HomePage = () => {
               color={'white'}
               _hover={{
                 bg: 'blue.500',
+              }}
+              onClick={() => {
+                navigate('../Projects');
               }}
             >
               View Projects
